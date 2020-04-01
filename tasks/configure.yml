@@ -7,6 +7,17 @@
     group: root
     mode: 0644
   notify: restart node_exporter
+  when: (ansible_service_mgr == 'systemd')
+
+- name: Copy the Node Exporter upstart config file
+  template:
+    src: node_exporter.upstart.j2
+    dest: /etc/init/node_exporter.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart node_exporter
+  when: (ansible_service_mgr == 'upstart')
 
 - name: Create textfile collector dir
   file:
