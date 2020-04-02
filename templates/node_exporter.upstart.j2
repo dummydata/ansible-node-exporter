@@ -1,7 +1,7 @@
 {{ ansible_managed | comment }}
 
 description "Prometheus Node Exporter"
-author "Andrew Nelson <drew@apl.uw.edu>"
+author "Andrew Nelson <andrew@dummydata.com>"
 
 start on (filesystem and net-device-up IFACE=lo)
 stop on runlevel [!2345]
