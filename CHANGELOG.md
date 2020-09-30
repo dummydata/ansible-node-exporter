@@ -2,18 +2,66 @@
 
 ## [**Next release**](https://galaxy.ansible.com/cloudalchemy/node-exporter)
 
+**Fixed bugs:**
+
+- Role fails to unpack node\_exporter binary [\#177](https://github.com/cloudalchemy/ansible-node-exporter/issues/177)
+- Checksum download sometimes fails \(status: 400\) [\#171](https://github.com/cloudalchemy/ansible-node-exporter/issues/171)
+
+**Merged pull requests:**
+
+- set file mode explicitly when downloading binary [\#178](https://github.com/cloudalchemy/ansible-node-exporter/pull/178) ([FilippoProjetto](https://github.com/FilippoProjetto))
+- Chore: troubleshooting document [\#172](https://github.com/cloudalchemy/ansible-node-exporter/pull/172) ([till](https://github.com/till))
+
+## [0.21.5](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-07-21)
+**Fixed bugs:**
+
+- Move StartLimitInterval to \[Service\] section [\#170](https://github.com/cloudalchemy/ansible-node-exporter/pull/170) ([bittopaz](https://github.com/bittopaz))
+
+## [0.21.4](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-07-20)
+**Merged pull requests:**
+
+- Use localhost to fetch checksums [\#169](https://github.com/cloudalchemy/ansible-node-exporter/pull/169) ([SuperQ](https://github.com/SuperQ))
+
+## [0.21.3](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-06-18)
+**Fixed bugs:**
+
+- node\_exporter can not be updated when node\_exporter\_binary\_local\_dir is set [\#160](https://github.com/cloudalchemy/ansible-node-exporter/issues/160)
+
+**Merged pull requests:**
+
+- add missing backslash when using TLS configuration [\#163](https://github.com/cloudalchemy/ansible-node-exporter/pull/163) ([sengel](https://github.com/sengel))
+
+## [0.21.2](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-06-18)
+**Merged pull requests:**
+
+- always import install.yml when using local dir [\#162](https://github.com/cloudalchemy/ansible-node-exporter/pull/162) ([appliedprivacy](https://github.com/appliedprivacy))
+
+## [0.21.1](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-06-16)
+**Merged pull requests:**
+
+- New prometheus/node\_exporter upstream release! [\#159](https://github.com/cloudalchemy/ansible-node-exporter/pull/159) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [0.21.0](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-05-31)
+**Merged pull requests:**
+
+- \*: add support for node\_exporter TLS settings [\#156](https://github.com/cloudalchemy/ansible-node-exporter/pull/156) ([paulfantom](https://github.com/paulfantom))
+- New prometheus/node\_exporter upstream release! [\#155](https://github.com/cloudalchemy/ansible-node-exporter/pull/155) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [0.20.0](https://galaxy.ansible.com/cloudalchemy/node-exporter) (2020-04-30)
 **Implemented enhancements:**
 
 - Hardcode node-exporter username and group [\#139](https://github.com/cloudalchemy/ansible-node-exporter/issues/139)
 
 **Fixed bugs:**
 
+- Task "Allow Node Exporter port in SELinux on RedHat OS family" fails on centos 7 [\#152](https://github.com/cloudalchemy/ansible-node-exporter/issues/152)
 - Add Support for over proxy installation [\#147](https://github.com/cloudalchemy/ansible-node-exporter/issues/147)
 - Checksum error [\#146](https://github.com/cloudalchemy/ansible-node-exporter/issues/146)
 - Problem downloading sha256sum.txt from github [\#143](https://github.com/cloudalchemy/ansible-node-exporter/issues/143)
 
 **Merged pull requests:**
 
+- Use symbolic permissions for textfile collector dir [\#150](https://github.com/cloudalchemy/ansible-node-exporter/pull/150) ([friesenkiwi](https://github.com/friesenkiwi))
 - \[REPO SYNC\] lock molecule to v2 [\#149](https://github.com/cloudalchemy/ansible-node-exporter/pull/149) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - always validate GitHub certificate as there is no reason not to trust it [\#148](https://github.com/cloudalchemy/ansible-node-exporter/pull/148) ([paulfantom](https://github.com/paulfantom))
 - Install 'policycoreutils-python' on redhat/centos \< 8 and fedora \< 29… [\#145](https://github.com/cloudalchemy/ansible-node-exporter/pull/145) ([wikro](https://github.com/wikro))
